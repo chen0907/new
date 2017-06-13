@@ -1,0 +1,22 @@
+        -:    0:Source:hello.c
+        -:    0:Graph:hello.gcno
+        -:    0:Data:hello.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int t = 1;
+        -:    4:
+        -:    5:int main()
+        -:    6:{
+        1:    7:    if (t)
+        1:    8:        printf("on this line\n");
+        -:    9:    else
+    #####:   10:        printf("but not here\n");
+        1:   11:	t=0;
+        1:   12:	if (t)
+    #####:   13:        printf("on this line\n");
+        -:   14:    else
+        1:   15:        printf("but not here\n");
+        1:   16:    return 0;
+        -:   17:}
